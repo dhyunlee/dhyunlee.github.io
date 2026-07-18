@@ -10,12 +10,19 @@ search: false
 
 // ---- Custom overrides ----
 // The site title is intentionally blank (masthead_title: " "), so hide the
-// empty title element and let the menu links center across the full width.
+// empty title element and center the whole menu block within the top bar.
+// (Centering the items *inside* a stretched .visible-links doesn't hold up
+// against the greedy-nav JS, so instead we don't stretch it and center the
+// block itself.)
 .greedy-nav {
+  justify-content: center;
+
   .site-title {
     display: none;
   }
+
   .visible-links {
+    flex: 0 1 auto;
     justify-content: center;
   }
 }
