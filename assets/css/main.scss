@@ -9,8 +9,13 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 // ---- Custom overrides ----
-// Move the top menu links. Use "center" to center them, or
-// "flex-start" to left-align them next to the site title.
-.greedy-nav .visible-links {
-  justify-content: center;
+// The site title is intentionally blank (masthead_title: " "), so hide the
+// empty title element and let the menu links center across the full width.
+.greedy-nav {
+  .site-title {
+    display: none;
+  }
+  .visible-links {
+    justify-content: center;
+  }
 }
