@@ -112,9 +112,8 @@ author:
   email            : "dh1120.lee@gmail.com"
   links:
     - label: "Email"
-      # icon: "fas fa-fw fa-envelope-square"
-      icon: "fab fa-fw fa-gmail"
-      url: "mailto:dh1120.lee@email.com"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:dh1120.lee@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/daehyun-lee-92b951110/"
