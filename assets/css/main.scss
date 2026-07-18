@@ -7,3 +7,10 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// ---- Custom overrides ----
+// Move the top menu links. Use "center" to center them, or
+// "flex-start" to left-align them next to the site title.
+.greedy-nav .visible-links {
+  justify-content: center;
+}
