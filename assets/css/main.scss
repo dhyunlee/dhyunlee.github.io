@@ -12,5 +12,5 @@ search: false
 // Move the top menu links. Use "center" to center them, or
 // "flex-start" to left-align them next to the site title.
 .greedy-nav .visible-links {
-  justify-content: center;
+  justify-content: flex-start;
 }
