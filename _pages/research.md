@@ -15,7 +15,7 @@ safety, and how to spend a protection budget on those and not the rest.
 
 ## Fault Tolerance for Closed-Loop Autonomous Systems
 
-Most work on protecting neural networks from hardware faults asks a single
+<!-- Most work on protecting neural networks from hardware faults asks a single
 question: does a fault corrupt the output of one inference? For an image
 classifier that is the right question. For a vehicle running a policy inside a
 feedback loop, it is not. The system produces many decisions per second, and the
@@ -24,13 +24,13 @@ outputs never reach the outcome at all.
 
 I study the gap between those two views &mdash; how a fault behaves in a single
 inference versus what it does to the closed loop over time &mdash; and what that
-implies for where protection is worth paying for.
+implies for where protection is worth paying for. -->
 
 *Ongoing work.*
 
 ## Fault Injection for Vision-Language-Action Models
 
-Vision-language-action (VLA) models are moving from research demos toward
+<!-- Vision-language-action (VLA) models are moving from research demos toward
 deployment on embedded accelerators, where memory is not always ECC-protected
 and a single upset can corrupt a weight that is then re-read for the rest of the
 task. Existing robustness studies of these models perturb the *inputs* &mdash;
@@ -39,7 +39,7 @@ computation itself.
 
 I am building an evaluation platform that injects hardware faults into a VLA
 policy and measures the effect end to end, comparing open-loop and closed-loop
-behavior on the same faults.
+behavior on the same faults. -->
 
 *Ongoing work.*
 
