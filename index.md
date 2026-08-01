@@ -85,4 +85,4 @@ classes:
 - **M.S. in Computer Science**, George Mason University, 2026
 - **M.S. in Electrical Engineering**, University of Virginia, 2023
 
-Feel free to get in touch at [dh1120.lee@gmail.com](mailto:dh1120.lee@gmail.com).
+Feel free to get in touch at [dlee217@gmu.edu](mailto:dlee217@gmu.edu).
