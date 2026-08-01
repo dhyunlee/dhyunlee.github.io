@@ -14,6 +14,25 @@ search: false
 // (Centering the items *inside* a stretched .visible-links doesn't hold up
 // against the greedy-nav JS, so instead we don't stretch it and center the
 // block itself.)
+// Pages with `author_profile: false` have no left sidebar, and pages without a
+// table of contents have nothing in the right gutter - but the theme reserves
+// space for both regardless, squeezing content to ~53% of the container.
+// Add `classes: [wide, nosidebar]` to a page to reclaim both gutters.
+.nosidebar {
+  .page {
+    @include breakpoint($large) {
+      float: none;
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  // Cap line length - full-width lines are too long to read comfortably.
+  .page__content {
+    max-width: 56em;
+  }
+}
+
 .greedy-nav {
   justify-content: center;
 
