@@ -1,9 +1,24 @@
 ---
 layout: single
 author_profile: false
+classes: wide
 ---
 
 <style>
+/* This page has no left sidebar and no table-of-contents, but the theme still
+   reserves a gutter for each. Reclaim both so the content fills the container. */
+@media (min-width: 1024px) {
+  .page {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/* Cap line length for readability - full 1280px lines are too long to read
+   comfortably. Raise or remove this number to go wider. */
+.page__content { max-width: 56em; }
+
 .profile-header {
   display: flex;
   gap: 2em;
